@@ -1,0 +1,10 @@
+1.Create Store (reducer) and export to use in App.js Provider Component's store prop
+
+2.Create Reducer (initialState, action) and export 
+
+3.Use in component
+	* pass (props) even if you dont have any
+	* create a mapStateToProps (state) function and return an object ({numOfCakes: state.numOfCakes}) with a property that we can use in the component's prop. Like,
+		props.numOfCakes or props.situation etc
+	* create a mapDispatchToProps (dispatch) function and return an object ({push: () -> dispatch(push())}) with a property that has the value of a function. That function returns an object with the action type
+	* use connect from 'react-redux' (mapStateToProps, mapDispatchToProps)(Component) to render to ui
